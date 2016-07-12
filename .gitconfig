@@ -1,0 +1,15 @@
+[user]
+	email = ggrumbley@ucsd.edu
+	name = gary
+[credential]
+	helper = osxkeychain
+[alias]
+	lg = log --oneline --decorate --all --graph
+	ac = !git add -A && git commit
+[core]
+	excludesfile = /Users/gary/.gitignore_global
+	editor = nvim
+[push]
+	default = simple
+[color]
+	ui = true
