@@ -44,6 +44,8 @@ Thumbs.db
 *.egg
 *.EGG
 *.EGG-INFO
+env
+venv
 bin
 build
 develop-eggs
@@ -52,6 +54,7 @@ eggs
 fake-eggs
 parts
 dist
+.env
 .installed.cfg
 .mr.developer.cfg
 .hg

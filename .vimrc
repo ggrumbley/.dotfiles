@@ -58,7 +58,7 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 set autoindent
-set smartindent
+set nosmartindent
 
 " DelimitMate Options
 let g:delimitMate_autoclose = 1

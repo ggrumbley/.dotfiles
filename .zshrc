@@ -121,8 +121,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python3/3.5.1/bin/python3.5
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Anaconda
-export PATH=$HOME/anaconda/bin:$PATH
+#export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 source /Users/gary/.virtualenvs/py3/bin/activate.sh
+source /usr/local/bin/activate.sh
