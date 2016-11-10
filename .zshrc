@@ -32,7 +32,7 @@ alias t3="tree -L 3"
 alias pyS="python -m SimpleHTTPServer 9000"
 alias jsS="live-server --port=9000"
 alias rm=rm
-alias brewski="brew update && brew upgrade --all && brew cleanup; brew cask cleanup; brew doctor"
+alias brewski="brew update && brew upgrade && brew cleanup; brew cask cleanup; brew doctor"
 ####################
 ## CUSTOM SCRIPTS ##
 ####################

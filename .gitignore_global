@@ -47,13 +47,13 @@ Thumbs.db
 env
 venv
 bin
-build
+#build
 develop-eggs
 downloads
 eggs
 fake-eggs
 parts
-dist
+#dist
 .env
 .installed.cfg
 .mr.developer.cfg
@@ -81,6 +81,4 @@ lib-cov
 pids
 logs
 results
-build
-
 node_modules
