@@ -11,7 +11,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nvie/vim-flake8'
@@ -20,6 +19,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-rails'
 Plugin 'rust-lang/rust.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'morhetz/gruvbox'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -28,8 +28,8 @@ let python_highlight_all=1
 syntax on
 set t_Co=256
 set background=dark
-colorscheme solarized	
-call togglebg#map("<F5>")
+colorscheme gruvbox
+" call togglebg#map("<F5>")
 
 " Misc
 set encoding=utf-8
@@ -48,7 +48,7 @@ nnoremap <C-H> <C-W><C-H>
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 let g:lightline = {
-	\ 'colorscheme': 'solarized',
+	\ 'colorscheme': 'gruvbox',
 	\ }
 set laststatus=2
 

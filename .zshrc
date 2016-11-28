@@ -17,6 +17,7 @@ zle -N expand-or-complete-with-dots
 bindkey "^I" expand-or-complete-with-dots
 
 # Color all the things
+export CLICOLOR=1
 export LSCOLORS='gxfxbEaEBxxEhEhBaDaCaD'
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35;46'
@@ -31,6 +32,7 @@ alias t2="tree -L 2"
 alias t3="tree -L 3"
 alias pyS="python -m SimpleHTTPServer 9000"
 alias jsS="live-server --port=9000"
+alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias rm=rm
 alias brewski="brew update && brew upgrade && brew cleanup; brew cask cleanup; brew doctor"
 ####################
