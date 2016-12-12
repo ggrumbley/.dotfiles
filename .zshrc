@@ -31,6 +31,7 @@ alias ber="bundle exec rspec"
 alias t2="tree -L 2"
 alias t3="tree -L 3"
 alias pyS="python -m SimpleHTTPServer 9000"
+alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias rm=rm
@@ -100,6 +101,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # NVM and Node Path Logic
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export PATH="$PATH:`yarn global bin`"
 
 # GO Path
 export GOPATH=$HOME/workbench/go
@@ -108,7 +110,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 # MY Executables
-export PATH=$PATH:$HOME/.plink
+export PATH=$PATH:$HOME/.bin
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
