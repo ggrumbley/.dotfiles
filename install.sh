@@ -29,3 +29,6 @@ fi
 if [ -d "$EXTRA_DIR" -a -f "$EXTRA_DIR/install.sh" ]; then
   . "$EXTRA_DIR/install.sh"
 fi
+
+# Make .vim directories
+mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
