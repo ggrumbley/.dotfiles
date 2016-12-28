@@ -33,3 +33,17 @@ fi
 
 # Make .vim directories
 mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
+
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Gruvbox Terminal Colors
+git clone https://github.com/flipxfx/gruvbox-terminal.git ~/.vim
+
+# Hack Font
+git clone https://github.com/chrissimpkins/Hack.git ~/.vim
+# Rustup
+curl https://sh.rustup.rs -sSf | sh
