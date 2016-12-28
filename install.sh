@@ -35,15 +35,43 @@ fi
 mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
 
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
+#Install Must-have Brew Recipes
+brew install git;
+brew install nvm;
+brew install yarn;
+brew install sqlite;
+brew install heroku;
+brew install gpg;
+brew install tree;
+brew install vim;
+brew install wget;
+#Install Must-have Casks
+brew cask install google-chrome;
+brew cask install dropbox;
+brew cask install firefox;
+brew cask install iterm2;
+brew cask install karabiner;
+brew cask install seil;
+brew cask install libreoffice;
+brew cask install spotify;
+brew cask install slack;
+brew cask install postman;
+brew cask install atom;
 # Install Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 
 # Gruvbox Terminal Colors
-git clone https://github.com/flipxfx/gruvbox-terminal.git ~/.vim
+git clone https://github.com/flipxfx/gruvbox-terminal.git ~/.vim;
 
 # Hack Font
-git clone https://github.com/chrissimpkins/Hack.git ~/.vim
+git clone https://github.com/chrissimpkins/Hack.git ~/.vim;
+
+# RVM
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3;
+
+\curl -sSL https://get.rvm.io | bash -s stable;
+
 # Rustup
-curl https://sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf | sh;
