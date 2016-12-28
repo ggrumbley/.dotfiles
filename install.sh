@@ -11,6 +11,7 @@ EXTRA_DIR="$HOME/.extra"
 # Symlink all the THINGS!
 ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/.gemrc" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.zpreztorc" ~
 ln -sfv "$DOTFILES_DIR/.zprofile" ~

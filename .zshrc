@@ -114,7 +114,7 @@ export PATH=$PATH:$HOME/.bin
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
-#export PATH=$PATH:$HOME/.multirust/toolchains/stable/cargo/bin
+export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
 export PATH=$PATH:./bin
 export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
