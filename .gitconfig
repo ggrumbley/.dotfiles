@@ -8,7 +8,7 @@
 	ac = !git add -A && git commit
 [core]
 	excludesfile = /Users/gary/.gitignore_global
-	editor = nvim
+	editor = vi
 [push]
 	default = simple
 [color]

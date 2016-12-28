@@ -104,10 +104,10 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$PATH:`yarn global bin`"
 
 # GO Path
-export GOPATH=$HOME/workbench/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+#export GOPATH=$HOME/workbench/go
+#export GOROOT=/usr/local/opt/go/libexec
+#export PATH=$PATH:$GOPATH/bin
+#export PATH=$PATH:$GOROOT/bin
 
 # MY Executables
 export PATH=$PATH:$HOME/.bin
@@ -128,6 +128,6 @@ export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
 #export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-source /Users/gary/.virtualenvs/py3/bin/activate.sh
-source /usr/local/bin/activate.sh
+#export JAVA_HOME=$(/usr/libexec/java_home)
+#source /Users/gary/.virtualenvs/py3/bin/activate.sh
+#source /usr/local/bin/activate.sh
