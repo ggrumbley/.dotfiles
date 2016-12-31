@@ -1,6 +1,7 @@
 [user]
 	email = ggrumbley@ucsd.edu
 	name = gary
+	username = ggrumbley
 [credential]
 	helper = osxkeychain
 [alias]

@@ -46,7 +46,6 @@ Thumbs.db
 *.EGG-INFO
 env
 venv
-bin
 #build
 develop-eggs
 downloads
