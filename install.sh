@@ -47,6 +47,7 @@ brew install gpg;
 brew install tree;
 brew install vim;
 brew install wget;
+brew install autoenv;
 #Install Must-have Casks
 brew cask install google-chrome;
 brew cask install dropbox;
