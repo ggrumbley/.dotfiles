@@ -101,6 +101,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # NVM and Node Path Logic
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# YARN
 export PATH="$PATH:`yarn global bin`"
 
 # GO Path
@@ -120,9 +122,10 @@ export PATH=$PATH:./bin
 export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
 
 # PYTHON3
-#export WORKON_HOME=$HOME/.virtualenvs
-#export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python3/3.5.1/bin/python3.5
-#source /usr/local/bin/virtualenvwrapper.sh
+source $(brew --prefix autoenv)/activate.sh
+# export WORKON_HOME=$HOME/.virtualenvs
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python3/3.5.1/bin/python3.5
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Anaconda
 #export PATH=$HOME/anaconda/bin:$PATH
