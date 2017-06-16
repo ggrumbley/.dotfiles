@@ -19,6 +19,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-rails'
 Plugin 'rust-lang/rust.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'python-mode/python-mode'
 Plugin 'morhetz/gruvbox'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,7 +66,7 @@ let g:delimitMate_autoclose = 1
 let g:delimitMate_matchpairs = "(:),[:],{:},<:>"
 let g:delimitMate_jump_expansion = 0
 let g:delimitMate_expand_space = 1
-let g:delimitMate_expand_cr = 1
+"let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_inside_quotes = 1
 " Setting Backup Folders
 set undodir=~/.vim/.undo//
