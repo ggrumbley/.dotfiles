@@ -48,6 +48,16 @@ function a() {
     atom .
   fi
 }
+
+# VS Code
+function c() {
+  if [ $1 ]; then
+    code $1
+  else
+    code .
+  fi
+}
+
 # FileSearch
 function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
@@ -134,4 +144,3 @@ source $(brew --prefix autoenv)/activate.sh
 #export JAVA_HOME=$(/usr/libexec/java_home)
 #source /Users/gary/.virtualenvs/py3/bin/activate.sh
 #source /usr/local/bin/activate.sh
-

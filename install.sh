@@ -13,6 +13,7 @@ ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/.gemrc" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
+ln -sfv "$DOTFILES_DIR/.vscode" ~
 ln -sfv "$DOTFILES_DIR/.zpreztorc" ~
 ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
@@ -53,13 +54,17 @@ brew cask install google-chrome;
 brew cask install dropbox;
 brew cask install firefox;
 brew cask install iterm2;
-brew cask install karabiner;
+brew cask install karabiner-elements;
 brew cask install seil;
 brew cask install libreoffice;
 brew cask install spotify;
 brew cask install slack;
 brew cask install postman;
-brew cask install atom;
+brew cask install visual-studio-code;
+
+# Link VS Code User Dir
+ln -sfv "$DOTFILES_DIR/User" ~/Library/Application\ Support/Code
+
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 
