@@ -141,6 +141,9 @@ source $(brew --prefix autoenv)/activate.sh
 #export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
-#export JAVA_HOME=$(/usr/libexec/java_home)
-#source /Users/gary/.virtualenvs/py3/bin/activate.sh
-#source /usr/local/bin/activate.sh
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
