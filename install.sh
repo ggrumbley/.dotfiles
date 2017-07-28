@@ -13,7 +13,6 @@ ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/.gemrc" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
-ln -sfv "$DOTFILES_DIR/.vscode" ~
 ln -sfv "$DOTFILES_DIR/.zpreztorc" ~
 ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
@@ -55,15 +54,11 @@ brew cask install dropbox;
 brew cask install firefox;
 brew cask install iterm2;
 brew cask install karabiner-elements;
-brew cask install seil;
-brew cask install libreoffice;
 brew cask install spotify;
 brew cask install slack;
 brew cask install postman;
 brew cask install visual-studio-code;
 
-# Link VS Code User Dir
-ln -sfv "$DOTFILES_DIR/User" ~/Library/Application\ Support/Code
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
@@ -78,6 +73,3 @@ git clone https://github.com/chrissimpkins/Hack.git ~/.vim;
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3;
 
 \curl -sSL https://get.rvm.io | bash -s stable;
-
-# Rustup
-curl https://sh.rustup.rs -sSf | sh;
