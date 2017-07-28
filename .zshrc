@@ -115,12 +115,6 @@ source $(brew --prefix nvm)/nvm.sh
 # YARN
 export PATH="$PATH:`yarn global bin`"
 
-# GO Path
-#export GOPATH=$HOME/workbench/go
-#export GOROOT=/usr/local/opt/go/libexec
-#export PATH=$PATH:$GOPATH/bin
-#export PATH=$PATH:$GOROOT/bin
-
 # MY Executables
 export PATH=$PATH:$HOME/.bin
 
@@ -131,14 +125,8 @@ export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rust
 export PATH=$PATH:./bin
 export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
 
-# PYTHON3
-source $(brew --prefix autoenv)/activate.sh
-# export WORKON_HOME=$HOME/.virtualenvs
-# export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python3/3.5.1/bin/python3.5
-# source /usr/local/bin/virtualenvwrapper.sh
-
 # Anaconda
-#export PATH=$HOME/anaconda/bin:$PATH
+export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)

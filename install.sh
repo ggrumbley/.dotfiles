@@ -41,13 +41,10 @@ mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
 brew install git;
 brew install nvm;
 brew install yarn;
-brew install sqlite;
-brew install heroku;
 brew install gpg;
 brew install tree;
 brew install vim;
 brew install wget;
-brew install autoenv;
 #Install Must-have Casks
 brew cask install google-chrome;
 brew cask install dropbox;
