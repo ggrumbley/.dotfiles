@@ -34,7 +34,6 @@ alias pyS="python -m SimpleHTTPServer 9000"
 alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
-alias rm=rm
 alias brewski="brew update && brew upgrade && brew cleanup; brew cask cleanup; brew doctor"
 ####################
 ## CUSTOM SCRIPTS ##
