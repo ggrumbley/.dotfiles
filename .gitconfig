@@ -1,16 +1,22 @@
 [user]
-	email = ggrumbley@ucsd.edu
-	name = gary
-	username = ggrumbley
+  email = ggrumbley@ucsd.edu
+  name = gary
+  username = ggrumbley
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [alias]
-	lg = log --oneline --decorate --all --graph
-	ac = !git add -A && git commit
+  lg = log --oneline --decorate --all --graph
+  ac = !git add -A && git commit
+  co = checkout
+  st = status -sb
+  br = branch
+  fu = fetch upstream
+  wipe = reset HEAD --hard
+  soft = reset HEAD^ --soft
 [core]
-	excludesfile = /Users/gary/.gitignore_global
-	editor = vi
+  excludesfile = /Users/gary/.gitignore_global
+  editor = vi
 [push]
-	default = simple
+  default = simple
 [color]
-	ui = true
+  ui = true

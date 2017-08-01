@@ -1,7 +1,5 @@
 ## My dotfiles
 
-Make sure to install the following:
+Make sure to install the following before running install script:
 + Xcode
-+ Prezto
-+ vim
-+ git
+

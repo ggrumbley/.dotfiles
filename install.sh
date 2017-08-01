@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Install Prezto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# Change shell to ZSH
+chsh -s /bin/zsh
+
 # Get current dir (so run this script from anywhere)
 export DOTFILES_DIR EXTRA_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
