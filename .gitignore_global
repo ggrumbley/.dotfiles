@@ -81,3 +81,9 @@ pids
 logs
 results
 node_modules
+yarn.lock
+
+### Intellij-related ###
+.idea/**/*
+**/*.iml
+**/rebel.xml

@@ -52,15 +52,15 @@ brew install tree;
 brew install vim;
 brew install wget;
 #Install Must-have Casks
-brew cask install google-chrome;
-brew cask install dropbox;
-brew cask install firefox;
+# brew cask install google-chrome;
+# brew cask install dropbox;
+# brew cask install firefox;
 brew cask install iterm2;
 brew cask install karabiner-elements;
 brew cask install spotify;
-brew cask install slack;
+# brew cask install slack;
 brew cask install postman;
-brew cask install visual-studio-code;
+# brew cask install visual-studio-code;
 
 
 # Install Vundle

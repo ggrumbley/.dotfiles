@@ -129,7 +129,11 @@ export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
 export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home)
+JAVA_VERSION=1.8
+export JAVA_HOME="$(/usr/libexec/java_home -v $JAVA_VERSION)"
+
+alias start-ems="JAVA_OPTS=\"-server -Xms256m -Xmx2g -XX:NewRatio=3 -Xss16m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:ConcGCThreads=4 -XX:ReservedCodeCacheSize=256m -XX:+AlwaysPreTouch -XX:+TieredCompilation -XX:+UseCompressedOops -XX:SoftRefLRUPolicyMSPerMB=50 -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -ea\" ~/dev/apache-tomcat-7.0.37/bin/startup.sh"
+
 
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk

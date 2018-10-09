@@ -11,7 +11,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'itchyny/lightline.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
@@ -29,7 +28,7 @@ let python_highlight_all=1
 syntax on
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
 " call togglebg#map("<F5>")
 
 " Misc

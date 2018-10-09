@@ -1,9 +1,9 @@
 [user]
-  email = ggrumbley@gmail.com
-  name = gary
+	email = Gary_Grumbley@intuit.com
+	name = Grumbley, Gary
   username = ggrumbley
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [alias]
   lg = log --oneline --decorate --all --graph
   ac = !git add -A && git commit
@@ -20,3 +20,6 @@
   default = simple
 [color]
   ui = true
+[hub]
+	host = github.intuit.com
+	host = github.intuit.com
