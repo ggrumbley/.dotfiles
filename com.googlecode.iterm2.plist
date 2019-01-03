@@ -17,7 +17,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Pictures</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -61,9 +61,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>30 518 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1293 421 796 486 -1680 0 1680 1027 </string>
+	<string>-1118 388 796 486 -1680 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1680 525 810 502 -1680 0 1680 1027 </string>
+	<string>-1680 0 1680 1027 -1680 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -246,7 +246,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>13.055980329949236</real>
+			<real>12.859737864847713</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -298,7 +298,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -680,7 +680,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.37477990164974617</real>
+			<real>0.47036207170050764</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -698,7 +698,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/ggrumbley</string>
+			<string>/Users/ggrumbley/Workbench</string>
 		</dict>
 	</array>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -706,7 +706,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6F2A9F46-0951-4B77-8B2E-6F2FA8AEF3D3</string>
 	<key>NoSyncLastTipTime</key>
-	<real>560791162.67620504</real>
+	<real>561913878.80739903</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -715,12 +715,24 @@
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>560119652.94570994</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
 		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0011</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -768,7 +780,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-09T15:19:21Z</date>
+	<date>2018-10-25T17:30:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -778,6 +790,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.2.3</string>
+	<string>3.2.4</string>
 </dict>
 </plist>

@@ -76,14 +76,17 @@ lib-cov
 *.out
 *.pid
 *.gz
-
 pids
 logs
 results
 node_modules
 yarn.lock
+package-lock.json
 
 ### Intellij-related ###
 .idea/**/*
 **/*.iml
 **/rebel.xml
+
+### VS Code ###
+.vscode
