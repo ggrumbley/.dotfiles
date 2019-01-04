@@ -24,6 +24,10 @@ ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/prompt_gary_setup" ~/.zprezto/modules/prompt/functions
+ln -sfv "$DOTFILES_DIR/.zshrc" ~
+
+mkdir -p "~/.config/fish/functions"
+cp "$DOTFILES_DIR/fish_promp.fish" ~/.config/fish/functions
 
 if [ "$(uname)" == "Darwin" ]; then
   ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
@@ -40,28 +44,31 @@ fi
 # Make .vim directories
 mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
 
-# Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
-#Install Must-have Brew Recipes
-brew install git;
-brew install nvm;
-brew install yarn;
-brew install gpg;
-brew install tree;
-brew install vim;
-brew install wget;
-#Install Must-have Casks
-# brew cask install google-chrome;
-# brew cask install dropbox;
-# brew cask install firefox;
-brew cask install iterm2;
-brew cask install karabiner-elements;
-brew cask install spotify;
-# brew cask install slack;
-brew cask install postman;
-# brew cask install visual-studio-code;
+if ["$(uname)" == "Darwin"]; then
+  # Install Homebrew
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
+  #Install Must-have Brew Recipes
+  brew install git;
+  brew install nvm;
+  brew install yarn;
+  brew install gpg;
+  brew install tree;
+  brew install vim;
+  brew install wget;
+
+  #Install Must-have Casks
+  # brew cask install google-chrome;
+  # brew cask install dropbox;
+  # brew cask install firefox;
+  brew cask install iterm2;
+  brew cask install karabiner-elements;
+  brew cask install spotify;
+  # brew cask install slack;
+  brew cask install postman;
+  # brew cask install visual-studio-code;
+fi
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
