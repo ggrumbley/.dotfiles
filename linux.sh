@@ -41,6 +41,11 @@ header "Install dev dependencies"
 sudo apt install -y \
   build-essential \
   apt-transport-https \
+  bluetooth \
+  bluez \
+  bluez-tools \
+  rfkill \
+  blueman \
   curl \
   fonts-hack-ttf \
   git \
