@@ -1,5 +1,3 @@
-[credential]
-	helper = osxkeychain
 [alias]
   lg = log --oneline --decorate --all --graph
   ac = !git add -A && git commit
@@ -17,5 +15,5 @@
 [color]
   ui = true
 [user]
-	email = ggrumbley@gmail.com
-	name = Gary Grumbley
+  email = ggrumbley@gmail.com
+  name = Gary Grumbley
