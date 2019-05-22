@@ -61,6 +61,21 @@ if [ "$SHELL" == "/bin/bash" ]; then
   chsh -s "$(which zsh)"
 fi
 
+header "Install NVM"
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+
+zsh install_nvm.sh
+source ~/.zprofile
+
+nvm install lts/dubnium
+
+header "Install Yarn"
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install --no-install-recommends yarn
+yarn --version
+
 header "Symlink all the THINGS!"
 ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
