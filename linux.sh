@@ -85,15 +85,21 @@ ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/prompt_gary_setup" ~/.zprezto/modules/prompt/functions
 
-header "Add window buttons back to GNOME"
-if hash gsettings 2>/dev/null; then
-  echo "Gnome Tweak Tool not installed"
-else
-  gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
-fi
-
 header "Copy all the THINGS!"
 cp -r "$DOTFILES_DIR/configFolders/." "$HOME"
 cp -r "$DOTFILES_DIR/assets/." "$HOME/Pictures"
+
+header "Add GNOME Themes"
+if hash gsettings 2>/dev/null; then
+  echo "Gnome Tweak Tool not installed"
+else
+  sudo apt-get install gnome-shell-extensions
+  gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+  gsettings set org.gnome.desktop.wm.preferences theme "Sweet-Dark"
+  gsettings set org.gnome.desktop.interface gtk-theme "Sweet-Dark"
+  gsettings set org.gnome.desktop.interface icon-theme "Sweet-Purple-Filled"
+  gsettings set org.gnome.desktop.screensaver picture-uri "$HOME/Pictures/outrun_sunset.jpg"
+  gsettings set org.gnome.desktop.background picture-uri "$HOME/Pictures/smallMemory_mikael_gustafsson.png"
+fi
 
 source scripts/nvidia-setup.sh
