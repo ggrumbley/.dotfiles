@@ -70,6 +70,13 @@ ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/prompt_gary_setup" ~/.zprezto/modules/prompt/functions
 
+header "Add window buttons back to GNOME"
+if hash gsettings 2>/dev/null; then
+  echo "Gnome Tweak Tool not installed"
+else
+  gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+fi
+
 header "Copy all the THINGS!"
 cp -r "$DOTFILES_DIR/configFolders/." "$HOME"
 cp -r "$DOTFILES_DIR/assets/." "$HOME/Pictures"
