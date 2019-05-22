@@ -19,7 +19,6 @@ bindkey "^I" expand-or-complete-with-dots
 # Color all the things
 export CLICOLOR=1
 export LSCOLORS='gxfxbEaEBxxEhEhBaDaCaD'
-export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;35;46'
 
 #############
@@ -34,8 +33,6 @@ alias pyS="python -m SimpleHTTPServer 9000"
 alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
-alias rm=rm
-alias brewski="brew update && brew upgrade && brew cleanup; brew cask cleanup; brew doctor"
 ####################
 ## CUSTOM SCRIPTS ##
 ####################
@@ -107,11 +104,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 #export EDITOR=vim
 
-
-# NVM and Node Path Logic
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # YARN
 export PATH="$PATH:`yarn global bin`"
 
@@ -129,13 +121,14 @@ export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
 export PATH=$HOME/anaconda/bin:$PATH
 
 # Java
-JAVA_VERSION=1.8
-export JAVA_HOME="$(/usr/libexec/java_home -v $JAVA_VERSION)"
+# JAVA_VERSION=1.8
+# export JAVA_HOME="$(/usr/libexec/java_home -v $JAVA_VERSION)"
 
 alias start-ems="JAVA_OPTS=\"-server -Xms256m -Xmx2g -XX:NewRatio=3 -Xss16m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:ConcGCThreads=4 -XX:ReservedCodeCacheSize=256m -XX:+AlwaysPreTouch -XX:+TieredCompilation -XX:+UseCompressedOops -XX:SoftRefLRUPolicyMSPerMB=50 -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -ea\" ~/dev/apache-tomcat-7.0.37/bin/startup.sh"
 
 
 # Android Studio
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

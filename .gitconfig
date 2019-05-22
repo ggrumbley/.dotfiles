@@ -16,3 +16,6 @@
   default = simple
 [color]
   ui = true
+[user]
+	email = ggrumbley@gmail.com
+	name = Gary Grumbley
