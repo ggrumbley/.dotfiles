@@ -47,6 +47,9 @@ sudo apt install -y \
   bluez-tools \
   rfkill \
   blueman \
+  pulseaudio \
+  pulseaudio-module-bluetooth \
+  pavucontrol \
   curl \
   fonts-hack-ttf \
   git \
