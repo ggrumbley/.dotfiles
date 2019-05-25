@@ -41,6 +41,7 @@ header "Install dev dependencies"
 sudo apt install -y \
   build-essential \
   apt-transport-https \
+  snapd \
   bluetooth \
   bluez \
   bluez-tools \
@@ -106,5 +107,21 @@ else
   gsettings set org.gnome.desktop.screensaver picture-uri "$HOME/Pictures/outrun_sunset.jpg"
   gsettings set org.gnome.desktop.background picture-uri "$HOME/Pictures/smallMemory_mikael_gustafsson.png"
 fi
+
+header "Install Snap Apps"
+sudo snap install \
+  spotify \
+  code --classic \
+  postman \
+  discord \
+  slack --classic
+
+
+header "Init Bluetooth (Realtek Driver is default)"
+sudo apt install -y bluez-firmware firmware-realtek
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+sudo rfkill unblock bluetooth
+sudo hciconfig hci0 up
 
 source scripts/nvidia-setup.sh

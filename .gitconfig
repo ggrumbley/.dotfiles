@@ -17,3 +17,5 @@
 [user]
   email = ggrumbley@gmail.com
   name = Gary Grumbley
+[credential]
+	helper = store
