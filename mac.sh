@@ -23,7 +23,6 @@ ln -sfv "$DOTFILES_DIR/.npmrc" ~
 ln -sfv "$DOTFILES_DIR/.zpreztorc" ~
 ln -sfv "$DOTFILES_DIR/.zprofile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
-ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/prompt_gary_setup" ~/.zprezto/modules/prompt/functions
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 

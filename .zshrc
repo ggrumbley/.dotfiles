@@ -33,6 +33,7 @@ alias pyS="python -m SimpleHTTPServer 9000"
 alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
+
 ####################
 ## CUSTOM SCRIPTS ##
 ####################
@@ -72,11 +73,15 @@ function r() { grep "$1" ${@:2} -R . }
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 #update all the things
-update() {
-    local brew="brew update; brew upgrade --all;"
-    # local gem="gem update;"
-    sh -c $brew;
-    # sudo sh -c $gem
+function bump() {
+  echo "Updating packages..."
+  if [[ "$(uname)" == "Darwin" ]]; then
+    brew update && brew upgrade && brew cleanup; brew doctor
+  elif [[ "$(uname)" == "Linux" ]]; then
+    sudo apt update && sudo apt upgrade -y
+  else
+    echo "This is not a supported OS."
+  fi
 }
 
 #change to current Finder directory
