@@ -65,6 +65,28 @@ function ci() {
   fi
 }
 
+function rc() {
+  if [ $1 ]; then
+    mkdir -p "$1"
+
+    # Scaffold component file
+    echo "import React from 'react';\nimport { Styled$1 } from './$1.styled';\n" > "$1/$1.js"
+    echo "const $1 = () => (<Styled$1>This is $1 Component</Styled$1>);\n\nexport default $1;" >> "$1/$1.js"
+
+    # Scaffold test file
+    touch "$1/$1.test.js"
+
+    # Scaffold StyledComponent file
+    echo "import styled from 'styled-components';\n" > "$1/$1.styled.js"
+    echo "export const Styled$1 = styled.div\`\n  background-color:green\n\`;" >> "$1/$1.styled.js"
+
+    # Scaffold Interface file
+    echo "import $1 from './$1';\n\nexport default $1;" > "$1/index.js"
+  else
+    echo "Please provide a component name"
+  fi
+}
+
 # FileSearch
 function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
