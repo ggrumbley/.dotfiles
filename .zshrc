@@ -25,6 +25,7 @@ export GREP_COLOR='1;35;46'
 ## ALIASES ##
 #############
 
+alias rm=rm
 alias be="bundle exec"
 alias ber="bundle exec rspec"
 alias t2="tree -L 2"
@@ -141,7 +142,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #export EDITOR=vim
 
 # YARN
-export PATH="$PATH:`yarn global bin`"
+export PATH="$(yarn global bin):$PATH"
 
 # MY Executables
 export PATH=$PATH:$HOME/.bin
@@ -168,3 +169,13 @@ alias start-ems="JAVA_OPTS=\"-server -Xms256m -Xmx2g -XX:NewRatio=3 -Xss16m -XX:
 # export PATH=$PATH:$ANDROID_HOME/tools
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/ggrumbley/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
