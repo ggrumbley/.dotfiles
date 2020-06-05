@@ -63,6 +63,10 @@ brew cask install spotify;
 brew cask install postman;
 brew cask install notable;
 brew cask install typora;
+brew cask install rocket;
+brew cask install vlc;
+brew cask install imageoptim;
+brew cask install google-backup-and-sync;
 brew cask install advancedrestclient;
 
 
