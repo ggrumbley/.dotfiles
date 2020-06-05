@@ -78,7 +78,6 @@ lib-cov
 *.gz
 pids
 logs
-results
 node_modules
 yarn.lock
 package-lock.json

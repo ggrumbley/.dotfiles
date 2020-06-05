@@ -45,6 +45,8 @@ sudo apt install -y \
   bluetooth \
   bluez \
   bluez-tools \
+  cmatrix \
+  curl \
   rfkill \
   blueman \
   pulseaudio \
@@ -56,6 +58,7 @@ sudo apt install -y \
   git-extras \
   lshw \
   openssl \
+  sl \
   terminator \
   tree \
   zsh

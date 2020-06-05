@@ -42,6 +42,7 @@ mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
 #Install Must-have Brew Recipes
+brew install curl;
 brew install git;
 brew install nvm;
 brew install yarn;
@@ -49,11 +50,20 @@ brew install gpg;
 brew install tree;
 brew install vim;
 brew install wget;
+brew install deno;
+
+#Install fun packages
+brew install ccat;
+brew install cmatrix;
+brew install sl;
 
 #Install Must-have Casks
 brew cask install iterm2;
 brew cask install spotify;
 brew cask install postman;
+brew cask install notable;
+brew cask install typora;
+brew cask install advancedrestclient;
 
 
 # Install Vundle
