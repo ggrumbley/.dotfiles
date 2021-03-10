@@ -158,8 +158,8 @@ export PATH=$PATH:$HOME/.bin
 export PATH="$HOME/.cargo/bin:$PATH"
 export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
-export PATH=$PATH:./bin
-export HOMEBREW_GITHUB_API_TOKEN=4330a63bf27a9187d9deedac8331f588587b10e3
+# Deno
+export PATH="/Users/ggrumbley/.deno/bin:$PATH"
 
 # Anaconda
 export PATH=$HOME/anaconda/bin:$PATH

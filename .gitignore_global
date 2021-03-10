@@ -89,3 +89,7 @@ package-lock.json
 
 ### VS Code ###
 .vscode
+
+### Intuit Stuff ###
+####################
+.intuitgithookrc
