@@ -35,6 +35,7 @@ alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias cm="cmatrix -s && sleep 1 && exit 1 && clear"
+alias respawn="cd ~/Workbench && clear"
 
 ####################
 ## CUSTOM SCRIPTS ##
