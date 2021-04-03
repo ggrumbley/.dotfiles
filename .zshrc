@@ -16,6 +16,9 @@ expand-or-complete-with-dots() {      # This bunch of code displays red dots whe
 zle -N expand-or-complete-with-dots
 bindkey "^I" expand-or-complete-with-dots
 
+# Start Neofetch
+neofetch
+
 # Color all the things
 export CLICOLOR=1
 export LSCOLORS='gxfxbEaEBxxEhEhBaDaCaD'
@@ -171,3 +174,11 @@ export PATH=$HOME/anaconda/bin:$PATH
 
 alias start-ems="JAVA_OPTS=\"-server -Xms256m -Xmx2g -XX:NewRatio=3 -Xss16m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:ConcGCThreads=4 -XX:ReservedCodeCacheSize=256m -XX:+AlwaysPreTouch -XX:+TieredCompilation -XX:+UseCompressedOops -XX:SoftRefLRUPolicyMSPerMB=50 -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -ea\" ~/dev/apache-tomcat-7.0.37/bin/startup.sh"
 
+# Firebase Project Cert
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/ggrumbley/.gcloud/rad-net-firebase-adminsdk-bpl2l-5c0800adb3.json"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ggrumbley/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ggrumbley/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ggrumbley/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ggrumbley/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
