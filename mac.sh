@@ -50,12 +50,14 @@ brew install gpg;
 brew install tree;
 brew install vim;
 brew install wget;
+brew install python3;
+brew install pipenv;
 
 #Install fun packages
 brew install ccat;
 brew install cmatrix;
 brew install sl;
-brew install neofetch
+brew install neofetch;
 
 #Install Must-have Casks
 brew cask install iterm2;
