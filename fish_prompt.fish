@@ -3,6 +3,7 @@ set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
 set __fish_git_prompt_showupstream 'informative'
 
+# All the things!
 # Colors
 set green (set_color green)
 set magenta (set_color magenta)
