@@ -60,16 +60,18 @@ brew install sl;
 brew install neofetch;
 
 #Install Must-have Casks
-brew cask install iterm2;
-brew cask install spotify;
-brew cask install postman;
-brew cask install notable;
-brew cask install typora;
-brew cask install rocket;
-brew cask install vlc;
-brew cask install imageoptim;
-brew cask install google-backup-and-sync;
-brew cask install advancedrestclient;
+brew install --cask iterm2;
+brew install --cask visual-studio-code;
+brew install --cask firefox;
+brew install --cask spotify;
+brew install --cask slack;
+brew install --cask notable;
+brew install --cask typora;
+brew install --cask rocket;
+brew install --cask vlc;
+brew install --cask imageoptim;
+brew install --cask google-backup-and-sync;
+brew install --cask advancedrestclient;
 
 
 # Install Vundle
@@ -80,8 +82,3 @@ git clone https://github.com/flipxfx/gruvbox-terminal.git ~/.vim;
 
 # Hack Font
 git clone https://github.com/chrissimpkins/Hack.git ~/.vim;
-
-# RVM
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3;
-
-\curl -sSL https://get.rvm.io | bash -s stable;

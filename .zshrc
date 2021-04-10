@@ -146,14 +146,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # YARN
-# export PATH="$(yarn global bin):$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# RVM and Ruby Path Logic
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-#export EDITOR=vim
 
 # MY Executables
 export PATH=$PATH:$HOME/.bin
@@ -164,21 +157,3 @@ export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rust
 
 # Deno
 export PATH="/Users/ggrumbley/.deno/bin:$PATH"
-
-# Anaconda
-export PATH=$HOME/anaconda/bin:$PATH
-
-# Java
-# JAVA_VERSION=1.8
-# export JAVA_HOME="$(/usr/libexec/java_home -v $JAVA_VERSION)"
-
-alias start-ems="JAVA_OPTS=\"-server -Xms256m -Xmx2g -XX:NewRatio=3 -Xss16m -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:ConcGCThreads=4 -XX:ReservedCodeCacheSize=256m -XX:+AlwaysPreTouch -XX:+TieredCompilation -XX:+UseCompressedOops -XX:SoftRefLRUPolicyMSPerMB=50 -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -ea\" ~/dev/apache-tomcat-7.0.37/bin/startup.sh"
-
-# Firebase Project Cert
-export GOOGLE_APPLICATION_CREDENTIALS="/Users/ggrumbley/.gcloud/rad-net-firebase-adminsdk-bpl2l-5c0800adb3.json"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ggrumbley/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ggrumbley/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ggrumbley/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ggrumbley/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
