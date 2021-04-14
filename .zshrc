@@ -17,7 +17,7 @@ zle -N expand-or-complete-with-dots
 bindkey "^I" expand-or-complete-with-dots
 
 # Start Neofetch
-neofetch
+# neofetch
 
 # Color all the things
 export CLICOLOR=1
