@@ -130,7 +130,7 @@ function prompt_gary_setup {
 
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{7}...%f%b'
-  zstyle ':prezto:module:editor:info:keymap:primary' format ' %B%F{1}❯%F{3}❯%F{2}❯%f%b'
+  zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{6}❯%F{3}❯%F{166}❯%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' %F{3}♺%f'
   zstyle ':prezto:module:editor:info:keymap:alternate' format ' %B%F{2}❮%F{3}❮%F{1}❮%f%b'
 
@@ -140,17 +140,19 @@ function prompt_gary_setup {
   zstyle ':prezto:module:git:info:added' format ' %%B%F{2}✚%f%%b'
   zstyle ':prezto:module:git:info:ahead' format ' %%B%F{13}⬆%f%%b'
   zstyle ':prezto:module:git:info:behind' format ' %%B%F{13}⬇%f%%b'
-  zstyle ':prezto:module:git:info:branch' format ' %%B%F{2}%b%f%%b'
+  zstyle ':prezto:module:git:info:branch' format ' %%B%F{3}[%f%F{2}%b%f%%b'
   zstyle ':prezto:module:git:info:commit' format ' %%B%F{3}%.7c%f%%b'
   zstyle ':prezto:module:git:info:deleted' format ' %%B%F{1}✖%f%%b'
   zstyle ':prezto:module:git:info:modified' format ' %%B%F{4}✱%f%%b'
+  zstyle ':prezto:module:git:info:dirty'     format ' %%B%F{166}✗%f%b'
+  zstyle ':prezto:module:git:info:clean'     format ' %B%F{6}✔%f%b'
   zstyle ':prezto:module:git:info:position' format ' %%B%F{13}%p%f%%b'
   zstyle ':prezto:module:git:info:renamed' format ' %%B%F{5}➜%f%%b'
   zstyle ':prezto:module:git:info:stashed' format ' %%B%F{6}✭%f%%b'
   zstyle ':prezto:module:git:info:unmerged' format ' %%B%F{3}═%f%%b'
   zstyle ':prezto:module:git:info:untracked' format ' %%B%F{7}◼%f%%b'
   zstyle ':prezto:module:git:info:keys' format \
-    'status' '%b %p %c:%s%A%B%S%a%d%m%r%U%u'
+    'status' '%b %p %c:%D%C%s%A%B%a%d%m%r%U%u%S%%B%F{3}]%f%%b '
 
   # Set python-info parameters.
   zstyle ':prezto:module:python:info:virtualenv' format '%f%F{3}(%v)%F{7} '
@@ -171,10 +173,10 @@ function prompt_gary_setup {
   # Define prompts.
 
 
-  PROMPT='%F{166}λ%f ${SSH_TTY:+"%F{9}%n%f%F{7}@%f%F{3}%m%f "}%F{6}${_prompt_gary_pwd}%(!. %B%F{1}#%f%b.)${editor_info[keymap]} '
+  PROMPT='%F{166}λ%f ${SSH_TTY:+"%F{9}%n%f%F{7}@%f%F{3}%m%f "}%F{6}${_prompt_gary_pwd} ${_prompt_gary_git}%(!. %B%F{1}#%f%b.)${editor_info[keymap]} '
   RPROMPT='$python_info[virtualenv]${editor_info[overwrite]}%(?:: %F{1}'
   RPROMPT+=${show_return}
-  RPROMPT+='%f)${VIM:+" %B%F{6}V%f%b"}${_prompt_gary_git}'
+  RPROMPT+='%f)${VIM:+" %B%F{6}V%f%b"}'
   SPROMPT='zsh: correct %F{1}%R%f to %F{2}%r%f [nyae]? '
 }
 
