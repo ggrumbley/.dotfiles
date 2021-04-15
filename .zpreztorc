@@ -25,20 +25,31 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
+  'syntax-highlighting' \
+  'directory' \
+  'docker' \
+  'archive' \
   'terminal' \
   'editor' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
-  'completion' \
   'homebrew' \
+  'history' \
+  'osx' \
+  'rsync' \
+  'ssh' \
+  'utility' \
+  'completion' \
   'fasd' \
   'git' \
+  'python' \
   'ruby' \
   'rails' \
   'node' \
-  'syntax-highlighting' \
+  'autosuggestions' \
+  'command-not-found' \
   'history-substring-search' \
   'prompt'
 
@@ -95,6 +106,9 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'gary'
 
+# Turn off Safe Ops
+zstyle ':prezto:module:utility' safe-ops 'no'
+
 #
 # Ruby
 #
@@ -143,7 +157,7 @@ zstyle ':prezto:module:prompt' theme 'gary'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'

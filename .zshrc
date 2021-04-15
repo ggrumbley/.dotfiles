@@ -28,7 +28,6 @@ export GREP_COLOR='1;35;46'
 ## ALIASES ##
 #############
 
-alias rm=rm
 alias be="bundle exec"
 alias ber="bundle exec rspec"
 alias t2="tree -L 2"
@@ -38,7 +37,7 @@ alias djS="python manage.py runserver"
 alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias cm="cmatrix -s && sleep 1 && exit 1 && clear"
-alias respawn="cd ~/Workbench && clear"
+alias nuke="cd ~/Workbench && clear"
 
 ####################
 ## CUSTOM SCRIPTS ##
@@ -98,13 +97,13 @@ function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
 
 #mkdir and cd
-function mkcd() { mkdir -p "$@" && cd "$_"; }
+# function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 #update all the things
 function bump() {
   echo "Updating packages..."
   if [[ "$(uname)" == "Darwin" ]]; then
-    brew update && brew upgrade && brew cleanup; brew doctor
+    brewu && brewc; brew doctor
   elif [[ "$(uname)" == "Linux" ]]; then
     sudo apt update && sudo apt upgrade -y
   else
@@ -113,14 +112,14 @@ function bump() {
 }
 
 #change to current Finder directory
-cdf() {
-    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-    if [ "$target" != "" ]; then
-        cd "$target"; pwd
-    else
-        echo 'No Finder window found' >&2
-    fi
-}
+# cdf() {
+#     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+#     if [ "$target" != "" ]; then
+#         cd "$target"; pwd
+#     else
+#         echo 'No Finder window found' >&2
+#     fi
+# }
 
 #color dem man pages
 function man() {
@@ -139,11 +138,6 @@ function man() {
 ###############
 ## ENV Paths ##
 ###############
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # YARN
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

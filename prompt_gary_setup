@@ -109,7 +109,7 @@ function prompt_gary_precmd {
   if (( $+functions[python-info] )); then
     python-info
   fi
-
+  node-info
   prompt_gary_async_tasks
 }
 
@@ -156,6 +156,8 @@ function prompt_gary_setup {
 
   # Set python-info parameters.
   zstyle ':prezto:module:python:info:virtualenv' format '%f%F{3}(%v)%F{7} '
+  # %v - Node.js version.
+  zstyle ':prezto:module:node:info:version' format 'v%v'
 
   # Set up non-zero return value display
   local show_return="✘ "
@@ -171,7 +173,7 @@ function prompt_gary_setup {
   _prompt_gary_pwd=''
 
   # Define prompts.
-
+  # ${node_info[version]}
 
   PROMPT='%F{9}λ%f ${SSH_TTY:+"%F{9}%n%f%F{7}@%f%F{3}%m%f "}%F{6}${_prompt_gary_pwd} ${_prompt_gary_git}%(!. %B%F{1}#%f%b.)${editor_info[keymap]} '
   RPROMPT='$python_info[virtualenv]${editor_info[overwrite]}%(?:: %F{1}'

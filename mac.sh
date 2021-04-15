@@ -41,6 +41,9 @@ mkdir -p ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo;
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
+# Tap some kegs
+brew tap homebrew/command-not-found
+
 #Install Must-have Brew Recipes
 brew install curl;
 brew install git;
@@ -55,6 +58,8 @@ brew install pipenv;
 
 #Install fun packages
 brew install ccat;
+brew install colordiff;
+brew install colormake;
 brew install cmatrix;
 brew install sl;
 brew install neofetch;
@@ -72,7 +77,7 @@ brew install --cask vlc;
 brew install --cask imageoptim;
 brew install --cask google-backup-and-sync;
 brew install --cask advancedrestclient;
-
+brew install --cask the-unarchiver;
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
