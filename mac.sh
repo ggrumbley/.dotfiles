@@ -71,7 +71,6 @@ brew install --cask firefox;
 brew install --cask spotify;
 brew install --cask slack;
 brew install --cask notable;
-brew install --cask typora;
 brew install --cask rocket;
 brew install --cask vlc;
 brew install --cask imageoptim;
