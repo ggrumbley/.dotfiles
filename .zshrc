@@ -30,6 +30,7 @@ export GREP_COLOR='1;35;46'
 
 alias be="bundle exec"
 alias ber="bundle exec rspec"
+alias cat="ccat"
 alias t2="tree -L 2"
 alias t3="tree -L 3"
 alias pyS="python -m SimpleHTTPServer 9000"
@@ -38,6 +39,7 @@ alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias cm="cmatrix -s && sleep 1 && exit 1 && clear"
 alias nuke="cd ~/Workbench && clear"
+
 
 ####################
 ## CUSTOM SCRIPTS ##
