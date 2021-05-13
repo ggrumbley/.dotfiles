@@ -39,6 +39,7 @@ alias jsS="live-server --port=9000"
 alias jsB="browser-sync start --server --files \"stylesheets/*.css, scripts/*.js, *.html\""
 alias cm="cmatrix -s && sleep 1 && exit 1 && clear"
 alias nuke="cd ~/Workbench && clear"
+alias dev="nvm install && yarn && ./node_modules/.bin/gulp"
 
 
 ####################
@@ -153,3 +154,6 @@ export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rust
 
 # Deno
 export PATH="/Users/ggrumbley/.deno/bin:$PATH"
+
+export NVM_DIR="/Users/garygrumbley/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

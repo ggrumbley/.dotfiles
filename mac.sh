@@ -65,19 +65,20 @@ brew install sl;
 brew install neofetch;
 
 #Install Must-have Casks
-brew install --cask iterm2;
-brew install --cask visual-studio-code;
-brew install --cask firefox;
-brew install --cask spotify;
-brew install --cask slack;
-brew install --cask notable;
-brew install --cask notion;
-brew install --cask rocket;
-brew install --cask vlc;
-brew install --cask imageoptim;
-brew install --cask google-backup-and-sync;
 brew install --cask advancedrestclient;
+brew install --cask figma;
+brew install --cask firefox;
+brew install --cask google-backup-and-sync;
+brew install --cask imageoptim;
+brew install --cask iterm2;
+brew install --cask notion;
+brew install --cask postman;
+brew install --cask rocket;
+brew install --cask slack;
+brew install --cask spotify;
 brew install --cask the-unarchiver;
+brew install --cask visual-studio-code;
+brew install --cask vlc;
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
